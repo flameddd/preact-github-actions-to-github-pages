@@ -6,12 +6,7 @@ import Header from './header';
 // Code-splitting is automated for routes
 import Home from '../routes/home';
 import Profile from '../routes/profile';
-
-let basename = ''
-
-if (process.env.GITHUB_PAGES) {
-  basename = `/${process.env.GITHUB_PAGES}`
-}
+import baseroute from '../baseroute'
 
 export default class App extends Component {
 	
@@ -20,7 +15,7 @@ export default class App extends Component {
 	 *	@param {string} event.url	The newly routed URL
 	 */
 	handleRoute = e => {
-    this.currentUrl = `${basename}${e.url}`;
+    this.currentUrl = e.url;
 	};
 
 	render() {
@@ -28,9 +23,9 @@ export default class App extends Component {
 			<div id="app">
 				<Header />
 				<Router onChange={this.handleRoute}>
-          <Home path={`${basename}/`} />
-          <Profile path={`${basename}/profile/`} user="me" />
-          <Profile path={`${basename}/profile/:user`} />
+          <Home path={`${baseroute}/`} />
+          <Profile path={`${baseroute}/profile/`} user="me" />
+          <Profile path={`${baseroute}/profile/:user`} />
 				</Router>
 			</div>
 		);
