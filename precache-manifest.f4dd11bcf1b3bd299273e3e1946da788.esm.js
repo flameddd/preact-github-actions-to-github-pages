@@ -24,47 +24,35 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/preact-github-actions-to-github-pages/assets/icons/mstile-150x150.png"
   },
   {
-    "revision": "b5242e46232fcafe18fa",
+    "revision": "b23cda95230c91a749d7178e18085e16",
+    "url": "/preact-github-actions-to-github-pages/bundle.2a7e7.esm.js"
+  },
+  {
+    "revision": "ae3804f6eab4d46718e5",
     "url": "/preact-github-actions-to-github-pages/bundle.7e56a.css"
   },
   {
-    "revision": "b5242e46232fcafe18fa",
-    "url": "/preact-github-actions-to-github-pages/bundle.b5242.js"
-  },
-  {
-    "revision": "92553ce4cc2dcf767ca4b63a24538e1f",
+    "revision": "cc0bf6384004ebb38929977c7284a742",
     "url": "/preact-github-actions-to-github-pages/index.html"
   },
   {
-    "revision": "e58efe8212d15cc4441c",
-    "url": "/preact-github-actions-to-github-pages/polyfills.e58ef.js"
+    "revision": "5e428982a7422613c323204f130d9126",
+    "url": "/preact-github-actions-to-github-pages/polyfills.749dd.esm.js"
   },
   {
-    "revision": "778d81bae98cd026d90a",
-    "url": "/preact-github-actions-to-github-pages/route-home.chunk.778d8.js"
+    "revision": "dc573848d92185eaf6910c628ac17070",
+    "url": "/preact-github-actions-to-github-pages/route-home.chunk.60b96.esm.js"
   },
   {
     "revision": "778d81bae98cd026d90a",
     "url": "/preact-github-actions-to-github-pages/route-home.chunk.e6c71.css"
   },
   {
+    "revision": "2ed7830b82908ef0783d59413f0d41b4",
+    "url": "/preact-github-actions-to-github-pages/route-profile.chunk.38290.esm.js"
+  },
+  {
     "revision": "af7281e94c99428477ad",
     "url": "/preact-github-actions-to-github-pages/route-profile.chunk.62c75.css"
-  },
-  {
-    "revision": "af7281e94c99428477ad",
-    "url": "/preact-github-actions-to-github-pages/route-profile.chunk.af728.js"
-  },
-  {
-    "revision": "13b82ed03d648451c57be206f75f0216",
-    "url": "/preact-github-actions-to-github-pages/sw-debug.js"
-  },
-  {
-    "revision": "232130f9277370ed3cb6593f0b40e7ed",
-    "url": "/preact-github-actions-to-github-pages/sw-esm.js"
-  },
-  {
-    "revision": "d9837c3312c0119088569214e2e84c86",
-    "url": "/preact-github-actions-to-github-pages/sw.js"
   }
 ]);
