@@ -7,6 +7,12 @@ import Header from './header';
 import Home from '../routes/home';
 import Profile from '../routes/profile';
 
+let basename = ''
+
+if (process.env.GITHUB_PAGES) {
+  basename = `/${process.env.GITHUB_PAGES}`
+}
+
 export default class App extends Component {
 	
 	/** Gets fired when the route changes.
@@ -14,7 +20,7 @@ export default class App extends Component {
 	 *	@param {string} event.url	The newly routed URL
 	 */
 	handleRoute = e => {
-		this.currentUrl = e.url;
+    this.currentUrl = `${basename}${e.url}`;
 	};
 
 	render() {
@@ -22,9 +28,9 @@ export default class App extends Component {
 			<div id="app">
 				<Header />
 				<Router onChange={this.handleRoute}>
-					<Home path="/" />
-					<Profile path="/profile/" user="me" />
-					<Profile path="/profile/:user" />
+          <Home path={`${basename}/`} />
+          <Profile path={`${basename}/profile/`} user="me" />
+          <Profile path={`${basename}/profile/:user`} />
 				</Router>
 			</div>
 		);

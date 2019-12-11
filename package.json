@@ -8,11 +8,11 @@
     "start:production": "npm run -s serve",
     "start:development": "npm run -s dev",
     "build": "preact build",
-    "build:gh": "GITHUB_PAGES=preact-github-actions-to-github-pages preact build && dot-json ./build/manifest.json start_url \"/preact-github-actions-to-github-pages/\"",
     "serve": "preact build && serve build --single",
     "dev": "preact watch",
     "lint": "eslint src",
-    "test": "jest"
+    "test": "jest",
+    "build:gh": "GITHUB_PAGES=preact-github-actions-to-github-pages preact build && dot-json ./build/manifest.json start_url \"/preact-github-actions-to-github-pages/\""
   },
   "eslintConfig": {
     "extends": "eslint-config-synacor"
@@ -21,6 +21,7 @@
     "build/*"
   ],
   "devDependencies": {
+    "dot-json": "^1.1.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-preact-pure": "^2.0.0",
     "eslint": "^6.0.1",
