@@ -1,22 +1,5 @@
 # preact-github-actions-to-github-pages
+  It's a Demo about how to use Github Actions to deploy a preactjs website to Github pages (also installable(PWA))
 
-## CLI Commands
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# test the production build locally
-npm run serve
-
-# run tests with jest and preact-render-spy 
-npm run test
-```
-
-For detailed explanation on how things work, checkout the [CLI Readme](https://github.com/developit/preact-cli/blob/master/README.md).
+## steps to how to use `Github Actions` to deploy `preactjs` to `Github Pages`
+- https://github.com/flameddd/blog/blob/master/2019-12-11%EF%BC%9AGithub%20Actions%20deploy%20Preactjs%20to%20Github%20Pages.md
